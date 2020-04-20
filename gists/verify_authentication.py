@@ -1,8 +1,8 @@
 import os
+from google.cloud import storage, datastore
 
 
 def main():
-    from google.cloud import storage
 
     # If you don't specify credentials when constructing the client, the
     # client library will look for credentials in the environment.
@@ -14,7 +14,6 @@ def main():
 
 
 if __name__ == "__main__":
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
-        "/Users/willthompson/Code/wkt/msha/MSHA-422-565648ed8982.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/willthompson/Code/wkt/msha/msha-422-18755fed4992.json"
     main()
 
